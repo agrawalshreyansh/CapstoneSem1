@@ -23,3 +23,6 @@ window.addEventListener('resize', () => {
     location.reload();
 });
 
+document.querySelector('.footer button').addEventListener('click', () => {
+    
+})
