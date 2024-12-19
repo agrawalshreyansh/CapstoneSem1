@@ -214,6 +214,7 @@ footer .btn {
         font-size: 1rem;
         padding: 0;
         display: flex;
+        align-items: center;
     }
 
     .menu {
@@ -231,7 +232,7 @@ footer .btn {
 
     .ch-btns {
         display: flex;
-        margin-left: 45vw;
+        margin-left: 42vw;
     }
 
     .body-grid {
