@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Syne:wght@400..800&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #381664;
+    background-color: #ECF6FE;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #381664;
+    padding: 0 25px;
+}
+
+
+.logo {
+    font-size: 3vw;
+    padding-left: 25px;
+    font-family: Syne;
+    font-weight: 800;
+}
+
+
+.menu {
+    width: 30%;
+    padding-right: 25px;
+    font-size: 1.2rem;
+    font-family: Syne;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav ul li {
+    margin-left: 1vw;
+}
+
+.banner {
+    font-family: Syne;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+    font-size: 3.5vw;
+    
+}
+
+.banner-img {
+    width: 100%;
+}
+
+.banner-img img {
+    border-radius: 40px;
+    width: 100%;
+}
+
+
+.b-text {
+    margin: 6rem 4rem 3rem 4rem;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.body-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    gap: 50px;
+}
+
+.card img{
+    width: 100%;
+    
+
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card p {
+    margin: 5px 0;
+    padding: 0;
+    font-family: Familjen Grotesk;
+    font-size: 1.3rem;
+} 
+
+.card-text {
+    width: 100%;
+}
+
+.grid-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    margin: 8rem 0 5rem 0;
+}
+
+.welcome-text {
+    margin: 0 50px;
+}
+
+.welcome-text p {
+    width: 40%;
+    font-family: Familjen Grotesk;
+    font-size: 1.3rem;
+    margin : 8rem 0 3rem auto ;
+}
+
+.desc-text {
+    margin: 0 50px;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.desc-text p {
+    margin: 10vw 18vw;
+    font-family: Syne;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    margin: 0 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16rem 4rem 16rem;
+}
+
+.contact h1 {
+    margin: 1vw 8vw;
+    font-size: 1.3rem;
+    font-family: Syne;
+   
+}
+
+.ch-btns {
+    display: none;
+}
+
+.contact p {
+    margin: 0 8vw 5vw 8vw;
+    font-family: Familjen Grotesk;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px;
+    margin-bottom: 1.8rem;
+}
+
+footer .text {
+    font-size: 1.2rem;
+    font-family: Syne;
+    font-weight: 500;
+}
+
+footer .btn {
+    border: 1px solid #381664;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-family: Space Mono;
+    font-weight: 600;
+    background: none;
+}
+
+.close-btn {
+    display: none ;
+    margin-left: 0;
+}
+
+
+@media (max-width:486px) {
+
+    nav {
+        height: 10vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .logo {
+        font-size: 1rem;
+        padding: 0;
+        display: flex;
+    }
+
+    .menu {
+        padding: 0;
+        width: 60%;
+        
+    }
+
+    .menu ul {
+        flex-direction: column;
+        position: absolute;
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .ch-btns {
+        display: flex;
+        margin-left: 50vw;
+    }
+
+    .body-grid {
+        gap: 12px;
+    }
+
+    .b-text {
+        margin: 10vw 0vw 5vw 0vw;
+    }
+
+    .banner {
+        margin: 0 25px;
+    }
+
+    .grid-container {
+        padding: 0 25px;
+        margin: 15vw 0;
+    }
+
+    .card p {
+        font-size: 0.6rem;
+    }
+
+    .welcome-text {
+        margin: 0 25px;
+    }
+
+    .welcome-text p {
+        width: 60%;
+        margin: 0 0 0 auto;
+        font-size: 0.8rem;
+    }
+
+    .desc-text {
+        font-size: 1rem;
+    }
+
+    .desc-text p {
+        margin: 10vw 2vw;
+    }
+
+    .contact {
+        margin: 2vw 5vw;
+    }
+
+    .contact h1 {
+        font-size: 0.9rem;
+        margin: 1vw 10vw;
+    }
+    
+    .contact p {
+        font-size: 0.6rem;
+        margin: 1vw 10vw;
+    }
+
+    .foot {
+        margin: 0 25px;
+    }
+
+    footer .text {
+        font-size: 0.8rem;
+    }
+
+    footer .btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .foot {
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+        
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .close-btn {
+        font-weight: 700;
+        font-size: 1.3rem;
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+}
