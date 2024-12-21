@@ -32,7 +32,9 @@ nav {
     padding-right: 25px;
     font-size: 1.2rem;
     font-family: Syne;
+   
 }
+
 
 nav ul {
     list-style: none;
@@ -43,6 +45,22 @@ nav ul {
 
 .nav ul li {
     margin-left: 1vw;
+   
+}
+
+.menu li {
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.menu li:hover {
+    scale: 1.1;
+    background-color: #381664;
+    color: white;
+    
+
 }
 
 .banner {
@@ -52,7 +70,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     margin: 0 50px;
-    font-size: 3.5vw;
+    font-size: 3.8vw;
     
 }
 
@@ -67,7 +85,7 @@ nav ul {
 
 
 .b-text {
-    margin: 6rem 4rem 3rem 4rem;
+    margin: 6rem 2rem 3rem 2rem;
     padding-bottom: 0;
     display: flex;
     justify-content: center;
@@ -85,8 +103,7 @@ nav ul {
 
 .card img{
     width: 100%;
-    
-
+    border: 1px solid #381664;
 }
 
 .card {
@@ -94,6 +111,12 @@ nav ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 0.15s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.05;
+    cursor: pointer;
 }
 
 .card p {
@@ -323,4 +346,21 @@ footer .btn {
     }
 
 
+}
+
+
+@media (max-width:1210px) {
+    .banner  {
+        font-size: 3.5vw;
+    }
+
+    .menu {
+        padding-left: -50px;
+    }
+}
+
+@media (max-width:900px) {
+    .menu {
+        padding-right: 100px;
+    }
 }

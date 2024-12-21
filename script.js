@@ -20,9 +20,7 @@ close.addEventListener('click', () => {
 
 
 window.addEventListener('resize', () => {
-    location.reload();
+        location.reload();
+    
 });
 
-document.querySelector('.footer button').addEventListener('click', () => {
-    
-})
